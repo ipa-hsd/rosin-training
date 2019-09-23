@@ -18,6 +18,7 @@ marker_pose = None
 def transform_pose(pose, target_frame):
 	if tf_listener.canTransform(target_frame, pose.header.frame_id, rospy.Time(0)):
 		#transform pose
+		transform = tf_listener.transformPose(target_frame, pose)
 		return transform.pose
 
 #callback function to receive marker messages
@@ -42,10 +43,10 @@ def plan_accepted():
 
 #plan and execute to given pose; If plan is not confirmed plan again
 def plan_and_execute(group, pose):
-	#set pose target
-	#plan
+	group.set_pose_target(pose)
+	plan1 = group.plan()
 	if plan_accepted():
-		#execute
+		group.execute(plan1, wait=True)
 	else:
 		exit()
 
@@ -54,7 +55,7 @@ def main():
 	#initialize moveit
 	moveit_commander.roscpp_initialize(sys.argv)
 
-	group = moveit_commander.MoveGroupCommander("move_group_name")
+	group = moveit_commander.MoveGroupCommander("arm")
 	group.set_max_velocity_scaling_factor(vel_scaling)
 
 	#while loop to move the robot to the found AR marker
