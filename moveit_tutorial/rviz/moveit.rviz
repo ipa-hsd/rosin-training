@@ -7,8 +7,8 @@ Panels:
         - /MotionPlanning1/Scene Robot1
         - /MotionPlanning1/Planning Request1
         - /TF1/Frames1
-      Splitter Ratio: 0.742560029
-    Tree Height: 504
+      Splitter Ratio: 0.7425600290298462
+    Tree Height: 357
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -16,6 +16,10 @@ Panels:
       - /Current View1
     Name: Views
     Splitter Ratio: 0.5
+Preferences:
+  PromptSaveOnExit: true
+Toolbars:
+  toolButtonStyle: 2
 Visualization Manager:
   Class: ""
   Displays:
@@ -25,7 +29,7 @@ Visualization Manager:
       Color: 160; 160; 164
       Enabled: true
       Line Style:
-        Line Width: 0.0299999993
+        Line Width: 0.029999999329447746
         Value: Lines
       Name: Grid
       Normal Cell Count: 0
@@ -37,12 +41,18 @@ Visualization Manager:
       Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
       Value: true
-    - Class: moveit_rviz_plugin/MotionPlanning
+    - Acceleration_Scaling_Factor: 1
+      Class: moveit_rviz_plugin/MotionPlanning
       Enabled: false
       Move Group Namespace: ""
+      MoveIt_Allow_Approximate_IK: false
+      MoveIt_Allow_External_Program: false
+      MoveIt_Allow_Replanning: false
+      MoveIt_Allow_Sensor_Positioning: false
       MoveIt_Goal_Tolerance: 0
       MoveIt_Planning_Attempts: 10
       MoveIt_Planning_Time: 5
+      MoveIt_Use_Cartesian_Path: false
       MoveIt_Use_Constraint_Aware_IK: true
       MoveIt_Warehouse_Host: 127.0.0.1
       MoveIt_Warehouse_Port: 33829
@@ -65,105 +75,6 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          base_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          camera_depth_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_depth_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          camera_rgb_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_rgb_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          denso_flange:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          ee_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link_1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link_2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link_3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link_4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link_5:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link_6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          platform:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          platform_base:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          platform_flange:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          suction_gripper_flange:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          tool_pin:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          tool_pin_rotated:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          vs087_base:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          world:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
         Loop Animation: true
         Robot Alpha: 0.5
         Robot Color: 150; 50; 150
@@ -179,7 +90,7 @@ Visualization Manager:
         Show Manipulability: false
         Show Manipulability Index: false
         Show Weight Limit: false
-        TextHeight: 0.0799999982
+        TextHeight: 0.07999999821186066
       Planning Request:
         Colliding Link Color: 255; 0; 0
         Goal State Alpha: 1
@@ -197,7 +108,7 @@ Visualization Manager:
       Scene Geometry:
         Scene Alpha: 1
         Scene Color: 50; 230; 50
-        Scene Display Time: 0.200000003
+        Scene Display Time: 0.20000000298023224
         Show Scene Geometry: true
         Voxel Coloring: Z-Axis
         Voxel Rendering: Occupied Voxels
@@ -209,114 +120,18 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          base_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          camera_depth_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_depth_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          camera_rgb_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_rgb_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          denso_flange:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          ee_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link_1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link_2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link_3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link_4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link_5:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link_6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          platform:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          platform_base:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          platform_flange:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          suction_gripper_flange:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          tool_pin:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          tool_pin_rotated:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          vs087_base:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          world:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
         Robot Alpha: 0.5
         Show Robot Collision: false
         Show Robot Visual: true
       Value: false
+      Velocity_Scaling_Factor: 1
     - Class: rviz/TF
       Enabled: true
       Frame Timeout: 15
       Frames:
         All Enabled: false
+        base:
+          Value: true
         base_link:
           Value: true
         camera_depth_frame:
@@ -329,41 +144,59 @@ Visualization Manager:
           Value: false
         camera_rgb_optical_frame:
           Value: true
-        denso_flange:
-          Value: false
         ee_link:
           Value: false
-        link_6:
-          Value: false
+        ee_link_mod:
+          Value: true
+        forearm_link:
+          Value: true
         platform:
           Value: false
-        platform_base:
+        shoulder_link:
           Value: true
-        platform_flange:
-          Value: false
-        suction_gripper_flange:
-          Value: false
-        tool_pin:
-          Value: false
-        tool_pin_rotated:
+        tool0:
           Value: true
-        vs087_base:
-          Value: false
+        upper_arm_link:
+          Value: true
         world:
           Value: false
-      Marker Scale: 0.699999988
+        wrist_1_link:
+          Value: true
+        wrist_2_link:
+          Value: true
+        wrist_3_link:
+          Value: true
+      Marker Scale: 0.699999988079071
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: false
       Tree:
         world:
+          base_link:
+            base:
+              {}
+            shoulder_link:
+              upper_arm_link:
+                forearm_link:
+                  wrist_1_link:
+                    wrist_2_link:
+                      wrist_3_link:
+                        ee_link:
+                          ee_link_mod:
+                            {}
+                        tool0:
+                          {}
+          camera_rgb_frame:
+            camera_depth_frame:
+              camera_depth_optical_frame:
+                {}
+            camera_link:
+              {}
+            camera_rgb_optical_frame:
+              {}
           platform:
-            platform_base:
-              platform_flange:
-                vs087_base:
-                  base_link:
-                    {}
+            {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -376,6 +209,10 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         base_link:
           Alpha: 1
           Show Axes: false
@@ -402,41 +239,16 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        denso_flange:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
         ee_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        link_1:
+        ee_link_mod:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
-        link_2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        link_3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        link_4:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        link_5:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        link_6:
+        forearm_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -446,35 +258,39 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        platform_base:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        platform_flange:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        suction_gripper_flange:
+        shoulder_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        tool_pin:
+        tool0:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        tool_pin_rotated:
+        upper_arm_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        vs087_base:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
+          Value: true
         world:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+        wrist_1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wrist_2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wrist_3_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
@@ -484,6 +300,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
+    Default Light: true
     Fixed Frame: world
     Frame Rate: 30
   Name: root
@@ -496,40 +313,41 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 5.11304092
+      Distance: 3.3360254764556885
       Enable Stereo Rendering:
-        Stereo Eye Separation: 0.0599999987
+        Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -1.27829003
-        Y: 0.487318993
-        Z: 1.2964e-06
+        X: 0.8724579811096191
+        Y: 0.6493396162986755
+        Z: 1.057981421581644e-6
       Focal Shape Fixed Size: true
-      Focal Shape Size: 0.0500000007
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
       Name: Current View
-      Near Clip Distance: 0.00999999978
-      Pitch: 0.220203146
+      Near Clip Distance: 0.009999999776482582
+      Pitch: -0.009796937927603722
       Target Frame: world
       Value: XYOrbit (rviz)
-      Yaw: 0.376772404
+      Yaw: 6.2199602127075195
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: true
-  Height: 710
+  Height: 1163
   Help:
     collapsed: false
   Hide Left Dock: true
   Hide Right Dock: false
   MotionPlanning:
     collapsed: false
-  MotionPlanning - Slider:
+  MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002420000028bfc0200000007fb000000100044006900730070006c00610079007300000000220000028b000000db00fffffffb0000000800480065006c00700000000342000000bb0000007000fffffffb0000000a0056006900650077007300000003b0000000b0000000ac00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000205000001df0000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000001600000016fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067000000011d000001900000018700ffffff000005560000028b00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000002420000028bfc0200000008fb000000100044006900730070006c00610079007300000000220000028b000000c900fffffffb0000000800480065006c00700000000342000000bb0000006e00fffffffb0000000a0056006900650077007300000003b0000000b0000000a400fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000205000001df0000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067000000011d000001900000019b00fffffffb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000004100ffffff0000073d0000043100000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
-  Width: 1366
-  X: 0
-  Y: 18
+  Width: 1853
+  X: 1987
+  Y: 0
